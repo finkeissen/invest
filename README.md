@@ -168,8 +168,7 @@ The repository currently gives special attention to:
 
 ## Related approaches
 
-Invest-GT is related to broader capital frameworks, life-design approaches, and systems-oriented impact frameworks, but combines them differently.  
-See [docs/ecosystem-position.md](./docs/ecosystem-position.md) and [docs/related-approaches.md](./docs/related-approaches.md).
+Invest-GT is related to the finkeissen research framework. See https://www.github.com/finkeissen
 
 ## Repository map
 
