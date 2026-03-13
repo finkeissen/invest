@@ -166,6 +166,11 @@ The repository currently gives special attention to:
 - risk, reversibility, and downside analysis
 - the eventual compilation of life plans into executable portfolios
 
+## Related approaches
+
+Invest-GT is related to broader capital frameworks, life-design approaches, and systems-oriented impact frameworks, but combines them differently.  
+See [docs/ecosystem-position.md](./docs/ecosystem-position.md) and [docs/related-approaches.md](./docs/related-approaches.md).
+
 ## Repository map
 
 - [Pipeline Guide](./PIPELINE.md)
@@ -227,7 +232,7 @@ Then move upward into:
 
 The repository is an evolving framework.
 
-Some parts are already structurally clear, especially the distinction between personal and collective investment, life-portfolio thinking, and the need to keep trade-offs, externalities, and risks visible. Other parts are still scaffolding and moving toward more operational form. 
+Some parts are already structurally clear, especially the distinction between personal and collective investment, life-portfolio thinking, and the need to keep trade-offs, externalities, and risks visible. Other parts are still scaffolding and moving toward more operational form.
 
 The current direction is to make the framework increasingly usable for:
 
@@ -259,53 +264,3 @@ At every stage, the repository should prefer:
 - explicit trade-offs over moral fog
 - testable claims over rhetorical force
 - practical next steps over abstract completionism
-
-## The Sixth Building Block – Built on top of repo invest
-
-**Invest-GT** is intentionally designed as the **sixth building block** and rests directly on the foundation laid by the earlier repository [**invest**](https://github.com/finkeissen/invest).
-
-While `invest` established:
-
-- the functional core definition of investment,
-- the taxonomy of multiple forms of capital (time, energy, attention, trust, health, coordination capability, …),
-- the fundamental separation between financial and non-financial returns,
-- and the first modular templates for inputs and hypotheses,
-
-**Invest-GT** systematically extends this base in the following directions:
-
-- explicit modeling of **person–group tension fields** (individual vs. collective return, distributional effects, hidden redistribution)
-- visible **trade-off & externality logic** instead of implicit compromises
-- translation into **portfolio-like life and group strategies**
-- risk-aware sequencing and **optionality consideration**
-- scaffolding for a **hypothesis-driven, reproducible simulation and decision pipeline**
-
-**Invest-GT** therefore does not re-invent the semantic foundation. It re-uses (and depends on) central modules and distinctions from `invest` — especially:
-
-- capital taxonomy
-- input definitions
-- basic hypothesis templates
-- core distinction between resource commitment and expected future gain
-
-For people already familiar with `invest`, **Invest-GT** mainly adds:
-
-- a second evaluation layer (**person ↔ group**) with corresponding interfaces
-- systematic treatment of **distribution, collateral damage, and asymmetric outcomes**
-- the shift from isolated capital consideration toward **integrated life & collective portfolios**
-- the technical and conceptual preparation for early **executable life-plan compiler** prototypes
-
-In short:  
-`invest` provides the **semantic bedrock and capital grammar**.  
-**Invest-GT** constructs the **operational architecture, multi-level evaluation logic, and portfolio machinery** on top of it — deliberately as the sixth, sequential building block.
-
-### Recommended reading order for users of both repositories
-
-1. [`github.com/finkeissen/invest`](https://github.com/finkeissen/invest)  
-   → README + `docs/core-concepts/`
-
-2. This repository (`Invest-GT`)  
-   → this README + `docs/personal-and-collective-investment.md` + `docs/life-portfolio-theory.md`
-
-3. Then dive into the pipeline folders of **Invest-GT**, starting with  
-   `pipeline/00_inputs/` → `pipeline/01_hypotheses/` → …
-
-This sequence preserves conceptual continuity while allowing complexity to grow in controlled steps.
