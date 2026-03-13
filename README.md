@@ -1,22 +1,88 @@
 # Invest-GT
 
-**Invest-GT** is a local-first research framework for analyzing how **political decisions, geopolitical developments, collective coordination, and collective coordination, practical investment behavior, and life-portfolio construction** interact over time.
+**Invest-GT** is a framework for understanding investment beyond money.
 
-In this repository, **investment** is used in a broad sense: the deliberate allocation of scarce resources in expectation of future gain under uncertainty. Those resources may include money, time, attention, trust, institutional capacity, health, education, coordination effort, and strategic optionality.
+It studies how people, groups, institutions, and states invest **time, energy, money, attention, trust, health, education, coordination effort, and other scarce resources** in order to improve future outcomes under uncertainty.
 
-The repository is designed for **structured exploration**, not for single-shot prediction and not for direct financial advice.
+The goal is not only to describe investment in theory, but to make it **practically usable**: for clearer priorities, better trade-offs, stronger life portfolios, and more coherent collective strategies.
 
 > **Make inputs explicit. State hypotheses clearly. Model components separately. Validate them independently. Integrate them through declared interfaces.**
+
+## What investment means here
+
+In this repository, **investment** is used in a broad functional sense:
+
+> the deliberate allocation of scarce resources in expectation of future gain under uncertainty
+
+That gain is not limited to financial return.
+
+Possible forms of gain include:
+
+- financial gain
+- health and vitality
+- education and skill
+- resilience and stability
+- trust and social capital
+- institutional capacity
+- coordination ability
+- strategic optionality
+- long-term life improvement
+
+This means that **a healthy life, education, relationships, stability, and orientation can all be treated as investments** if they improve future conditions for action and life.
+
+Not all gains are directly comparable. Some trade-offs must remain visible instead of being hidden behind one single score.
+
+## Core idea
+
+The central claim of the repository is simple:
+
+**Investment is broader than finance.**
+
+A person invests when they use time, energy, money, or other resources to improve future life conditions.  
+A household invests when it builds health, resilience, education, or stability.  
+A group invests when it builds trust, coordination, shared knowledge, or durable structures.  
+Institutions, firms, and states invest when they commit capital, legitimacy, policy capacity, or strategic effort toward future advantage.
+
+The repository therefore treats investment as a general framework for thinking about:
+
+- life goals
+- priorities
+- risks
+- sequencing
+- trade-offs
+- maintenance burdens
+- tailwinds and headwinds
+- individual and collective gains
+- collateral damage and distribution effects
+
+## Personal and collective investment
+
+A core distinction in this project is the difference between:
+
+1. **investment from the perspective of the individual**
+2. **investment from the perspective of the group**
+
+These two levels are connected, but they are not identical.
+
+A strategy may look beneficial at the group level while imposing severe losses on some individuals. In such cases, “group gain” must be examined carefully. Otherwise, a supposed collective success may hide redistribution, damage displacement, or a zero-sum structure.
+
+For that reason, the framework asks at least two questions:
+
+- What are the gains and losses for the individual person?
+- What are the gains and losses across the group, including distribution and collateral damage?
+
+This makes **positive-sum, zero-sum, destructive, and asymmetric outcomes** an essential part of evaluation.
 
 ## What the project is
 
 Invest-GT is a framework for:
 
+- broad investment thinking across multiple forms of capital
+- life-portfolio design for individuals and groups
+- practical priority-setting under constraints
 - political-risk and geopolitical scenario analysis
 - strategic interaction modeling across persons, groups, institutions, states, and markets
 - hypothesis-driven simulation design
-- practical investment thinking across multiple forms of capital
-- life-portfolio design for persons and groups
 - local, reproducible experimentation
 - disciplined translation from theory to implementation
 
@@ -27,27 +93,32 @@ Invest-GT is **not**:
 - a trading bot
 - a portfolio-advice engine
 - a prediction oracle
+- direct financial advice
 - a substitute for empirical validation
 - a finished policy model
 - a complete theory of human life or society
 
-## Core idea
+## What this framework should eventually enable
 
-The central claim of the repository is that **investment is broader than finance**.
+A mature version of the repository should help answer questions such as:
 
-A person invests when they allocate resources now in order to improve future life conditions. A household invests when it strengthens resilience, learning, health, or stability. A group invests when it builds trust, coordination capacity, shared knowledge, or durable institutions. States and firms invest when they commit capital, policy capacity, legitimacy, or strategic effort toward future advantage.
+- What should a person prioritize first: safety, health, education, income, coordination, or recovery?
+- Which investments increase future optionality?
+- Which investments mainly preserve rather than expand?
+- Which actions create hidden collateral damage?
+- Which group strategies are positive-sum, and which are redistributive or destructive?
+- How can life goals be translated into a realistic, executable plan?
+- How can a person or group build a portfolio of actions rather than relying on isolated decisions?
 
-This means the repository works with multiple forms of gain:
+The long-term ambition is to support the compilation of a **life plan** or **action portfolio** from a limited number of explicit inputs such as:
 
-- financial gain
-- health and vitality gain
-- educational and skill gain
-- social and trust gain
-- institutional gain
-- strategic optionality gain
-- long-term resilience gain
-
-Not all gains are directly commensurable. Some trade-offs must be kept explicit rather than hidden behind one aggregate score.
+- goals
+- constraints
+- risks
+- available resources
+- time horizons
+- dependencies
+- expected benefits and harms for self and others
 
 ## Design principles
 
@@ -58,9 +129,42 @@ The repository follows a few non-negotiable principles:
 3. **A clear hypothesis is better than vague intuition.**
 4. **Narratives are not evidence by themselves.**
 5. **Validation must be possible in principle.**
-6. **Group gain must be checked for distribution and collateral damage.**
-7. **Practical usefulness matters.** The system should ultimately help real people build and execute better portfolios of action.
-8. **Gain without visible harm is a dangerous abstraction.** Distribution, externalities, and collateral damage must stay legible.
+6. **Practical usefulness matters.**
+7. **Group gain must be checked for distribution and collateral damage.**
+8. **Trade-offs should stay visible.**
+9. **Maintenance and preservation are valid investments.**
+10. **The avoidance of major downside can be more important than nominal upside.**
+
+## Project posture
+
+The project sits between several traditions:
+
+- analytical philosophy
+- functional philosophy
+- systems thinking
+- political economy
+- scenario analysis
+- strategic studies
+- practical life design
+
+The ambition is not only to describe systems, but to make them **actionable**.
+
+A theory of investment is only useful if it can eventually support real-world decision portfolios for individuals and groups. That includes life goals, constraints, sequencing, maintenance burdens, tailwinds, headwinds, risk analysis, game-theoretic interaction, and review logic.
+
+## Current themes in the repository
+
+The repository currently gives special attention to:
+
+- investment beyond finance
+- personal and collective investment
+- life goals as investment targets
+- tailwinds and headwinds
+- maintenance and preservation
+- collateral damage and externalities
+- lesser-evil trade-offs
+- positive-sum vs. zero-sum outcomes
+- risk, reversibility, and downside analysis
+- the eventual compilation of life plans into executable portfolios
 
 ## Repository map
 
@@ -69,20 +173,39 @@ The repository follows a few non-negotiable principles:
 - [Decisions](./decisions/)
 - [Pipeline](./pipeline/)
 
-Major implementation-oriented root folders may include reusable assets such as:
+Major root folders may include:
 
 - `agents/`
+- `configs/`
+- `data/`
+- `docs/`
 - `models/`
+- `pipeline/`
+- `reports/`
 - `runtime/`
 - `simulations/`
 - `tests/`
-- `reports/`
-- `configs/`
-- `data/`
 
 ## How to read the repository
 
-For a bottom-up reading order, start with:
+### If you want the core idea first
+Start with:
+
+- `docs/overview.md`
+- `docs/personal-and-collective-investment.md`
+- `docs/life-portfolio-theory.md`
+- this `README.md`
+
+### If you want the practical direction
+Then read:
+
+- `docs/life-plan-compiler.md`
+- `docs/collateral-damage-and-externalities.md`
+- `pipeline/03_models/`
+- `pipeline/00_inputs/priorities/`
+
+### If you want the full bottom-up structure
+Start with:
 
 1. `pipeline/00_inputs/`
 2. `pipeline/01_hypotheses/`
@@ -100,31 +223,34 @@ Then move upward into:
 - `PIPELINE.md`
 - this root `README.md`
 
-## Project posture
+## Status
 
-The project sits between several traditions:
+The repository is an evolving framework.
 
-- analytical philosophy
-- functional philosophy
-- systems thinking
-- political economy
-- scenario analysis
-- strategic studies
-- practical life design
+Some parts are already structurally clear, especially the distinction between personal and collective investment, life-portfolio thinking, and the need to keep trade-offs, externalities, and risks visible. Other parts are still scaffolding and moving toward more operational form. 
 
-The ambition is not only to describe systems, but to make them **actionable**. A theory of investment is only useful if it can eventually support the construction of real-world decision portfolios for individuals and groups. That includes life goals, constraints, sequencing, maintenance burdens, tailwinds, headwinds, and review logic.
+The current direction is to make the framework increasingly usable for:
 
-## Practical direction
+- explicit decision support
+- portfolio construction across life domains
+- person/group priority analysis
+- risk-aware action sequencing
+- clearer translation from theory into execution
 
-A mature version of the repository should be able to support questions such as:
+## For whom this repository may be useful
 
-- What should a person prioritize first: safety, health, education, income, or coordination?
-- Which investments increase future optionality?
-- Which actions create hidden collateral damage?
-- Which group strategies are positive-sum, and which are only redistributive or destructive?
-- How should long-term life goals be compiled into an executable plan?
+This repository may be relevant for people interested in:
 
-## Current standard
+- broad investment theory beyond finance
+- practical philosophy
+- life design under real constraints
+- strategic thinking
+- systems modeling
+- individual and collective decision-making
+- risk and trade-off analysis
+- building coherent portfolios of action
+
+## Standard of quality
 
 At every stage, the repository should prefer:
 
@@ -134,20 +260,52 @@ At every stage, the repository should prefer:
 - testable claims over rhetorical force
 - practical next steps over abstract completionism
 
-## Status
+## The Sixth Building Block – Built on top of repo invest
 
-The repository is an evolving framework. Some areas are mature, others are still scaffolding. The immediate goal is to improve consistency from the lowest-level inputs up to the root-level documentation, so that theory and implementation stay aligned.
+**Invest-GT** is intentionally designed as the **sixth building block** and rests directly on the foundation laid by the earlier repository [**invest**](https://github.com/finkeissen/invest).
 
+While `invest` established:
 
-## Newly explicit concepts
+- the functional core definition of investment,
+- the taxonomy of multiple forms of capital (time, energy, attention, trust, health, coordination capability, …),
+- the fundamental separation between financial and non-financial returns,
+- and the first modular templates for inputs and hypotheses,
 
-The repository now treats the following as first-class ideas rather than side comments:
+**Invest-GT** systematically extends this base in the following directions:
 
-- gain as a multi-axis concept rather than a single scalar
-- personal and collective investment as distinct but connected layers
-- life goals as investable targets
-- tailwinds and headwinds as practical priority logic
-- maintenance and preservation as valid investments
-- collateral damage, lesser-evil trade-offs, and externalities as required parts of evaluation
-- the eventual goal of compiling a life plan into an executable portfolio
-# invest
+- explicit modeling of **person–group tension fields** (individual vs. collective return, distributional effects, hidden redistribution)
+- visible **trade-off & externality logic** instead of implicit compromises
+- translation into **portfolio-like life and group strategies**
+- risk-aware sequencing and **optionality consideration**
+- scaffolding for a **hypothesis-driven, reproducible simulation and decision pipeline**
+
+**Invest-GT** therefore does not re-invent the semantic foundation. It re-uses (and depends on) central modules and distinctions from `invest` — especially:
+
+- capital taxonomy
+- input definitions
+- basic hypothesis templates
+- core distinction between resource commitment and expected future gain
+
+For people already familiar with `invest`, **Invest-GT** mainly adds:
+
+- a second evaluation layer (**person ↔ group**) with corresponding interfaces
+- systematic treatment of **distribution, collateral damage, and asymmetric outcomes**
+- the shift from isolated capital consideration toward **integrated life & collective portfolios**
+- the technical and conceptual preparation for early **executable life-plan compiler** prototypes
+
+In short:  
+`invest` provides the **semantic bedrock and capital grammar**.  
+**Invest-GT** constructs the **operational architecture, multi-level evaluation logic, and portfolio machinery** on top of it — deliberately as the sixth, sequential building block.
+
+### Recommended reading order for users of both repositories
+
+1. [`github.com/finkeissen/invest`](https://github.com/finkeissen/invest)  
+   → README + `docs/core-concepts/`
+
+2. This repository (`Invest-GT`)  
+   → this README + `docs/personal-and-collective-investment.md` + `docs/life-portfolio-theory.md`
+
+3. Then dive into the pipeline folders of **Invest-GT**, starting with  
+   `pipeline/00_inputs/` → `pipeline/01_hypotheses/` → …
+
+This sequence preserves conceptual continuity while allowing complexity to grow in controlled steps.
