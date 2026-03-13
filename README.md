@@ -1,6 +1,6 @@
-# Invest-GT
+# Invest
 
-**Invest-GT** is a framework for understanding investment beyond money.
+**Invest** is a framework for understanding investment beyond money.
 
 It studies how people, groups, institutions, and states invest **time, energy, money, attention, trust, health, education, coordination effort, and other scarce resources** in order to improve future outcomes under uncertainty.
 
