@@ -1,0 +1,88 @@
+# --- Operating system files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.eggs/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Node / frontend tooling ---
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.next/
+.nuxt/
+.parcel-cache/
+coverage/
+
+# --- Environment / secrets ---
+.env
+.env.*
+*.local
+secrets/
+*.key
+*.pem
+
+# --- Logs / temp ---
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+
+# --- Archives / exports ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# --- Generated runtime artifacts ---
+runtime/generated/
+runtime/cache/
+runtime/state/
+pipeline/04_runtime/generated/
+
+# --- Generated simulations / reports ---
+simulations/output/
+reports/generated/
+pipeline/05_simulations/output/
+pipeline/07_reports/output/
+
+# --- Large local data drops (keep placeholders / READMEs tracked) ---
+data/raw/*
+data/processed/*
+!data/raw/README.md
+!data/processed/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
