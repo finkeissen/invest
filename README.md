@@ -1,4 +1,4 @@
-# Invest
+# INVEST Repository
 
 **Invest** is a framework for understanding investment beyond money.
 
