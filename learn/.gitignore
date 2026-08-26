@@ -1,0 +1,19 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local notes that should not enter the public repository
+NOTES.local.md
+TODO.local.md
+private/
+internal/
+
+# Build artifacts (none expected, but reserved)
+build/
+dist/

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/learn/schema/learner_state.schema.json",
+  "title": "Learner State",
+  "description": "Structural form of a learner state artifact. See requirements/learner_state.contract.md for normative obligations.",
+  "type": "object",
+  "required": ["learner_id", "captured_at", "goal_context", "concepts", "gaps", "admissibility"],
+  "properties": {
+    "learner_id": {
+      "type": "string",
+      "description": "Stable identifier scoped to the producing system."
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "goal_context": {
+      "type": "object",
+      "required": ["goal_id"],
+      "properties": {
+        "goal_id": { "type": "string" },
+        "goal_source": {
+          "type": "string",
+          "enum": ["self_declared", "external_authority", "derived"]
+        }
+      }
+    },
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["concept_id", "dimension_shift_level", "qualifier"],
+        "properties": {
+          "concept_id": { "type": "string" },
+          "dimension_shift_level": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5
+          },
+          "qualifier": {
+            "type": "string",
+            "enum": ["declared", "observed", "inferred"]
+          },
+          "evidence_ref": {
+            "type": "string",
+            "description": "Reference to the observation that establishes this level. Required when qualifier is 'observed'."
+          }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Gap identifiers; see gap.schema.json for structure."
+      }
+    },
+    "admissibility": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["admissible", "under_review", "STOP"]
+        },
+        "stop_reason": {
+          "type": "string",
+          "description": "Required when status is STOP. Must reference an enumerated reason in the relevant contract."
+        }
+      }
+    },
+    "prior_state_ref": {
+      "type": "string",
+      "description": "Reference to the immediately prior learner state, for retrievability."
+    }
+  }
+}

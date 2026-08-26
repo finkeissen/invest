@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/learn/schema/gap.schema.json",
+  "title": "Gap",
+  "description": "Structural form of a gap artifact. See requirements/gap.contract.md for normative obligations.",
+  "type": "object",
+  "required": ["gap_id", "learner_state_ref", "concept_id", "target_level", "detection_source", "status"],
+  "properties": {
+    "gap_id": {
+      "type": "string",
+      "description": "Stable identifier scoped to the producing system."
+    },
+    "learner_state_ref": {
+      "type": "string",
+      "description": "Reference to the learner state in which this gap is asserted."
+    },
+    "concept_id": {
+      "type": "string"
+    },
+    "current_level": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 5,
+      "description": "Null indicates structural absence (no observation), not a low level."
+    },
+    "target_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "detection_source": {
+      "type": "string",
+      "enum": ["declared", "observed", "derived"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "closed", "superseded", "STOP"]
+    },
+    "closed_by_evaluation_ref": {
+      "type": "string",
+      "description": "Required when status is 'closed'."
+    },
+    "superseded_by_gap_ref": {
+      "type": "string",
+      "description": "Required when status is 'superseded'."
+    },
+    "stop_reason": {
+      "type": "string",
+      "description": "Required when status is STOP."
+    }
+  }
+}

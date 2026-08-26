@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/learn/schema/intervention.schema.json",
+  "title": "Intervention",
+  "description": "Structural form of an intervention artifact. See requirements/intervention.contract.md for normative obligations.",
+  "type": "object",
+  "required": ["intervention_id", "gap_refs", "learner_state_ref", "preconditions", "expected_effect", "postcondition", "state"],
+  "properties": {
+    "intervention_id": {
+      "type": "string"
+    },
+    "gap_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "References to gaps this intervention addresses."
+    },
+    "learner_state_ref": {
+      "type": "string"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Structural conditions that must hold for admissibility. Implementation-specific in form, not in obligation."
+    },
+    "expected_effect": {
+      "type": "object",
+      "required": ["concept_id", "target_level"],
+      "properties": {
+        "concept_id": { "type": "string" },
+        "target_level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "postcondition": {
+      "type": "object",
+      "required": ["observable_via"],
+      "properties": {
+        "observable_via": {
+          "type": "string",
+          "enum": ["probe", "evaluation", "external_evidence"],
+          "description": "How the post-condition is to be observed. Concrete probe content is out of scope for this repository."
+        }
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": ["proposed", "applied", "evaluated", "closed", "STOP"]
+    },
+    "evaluation_ref": {
+      "type": "string",
+      "description": "Required when state is 'evaluated' or later."
+    },
+    "stop_reason": {
+      "type": "string",
+      "description": "Required when state is STOP."
+    }
+  }
+}
