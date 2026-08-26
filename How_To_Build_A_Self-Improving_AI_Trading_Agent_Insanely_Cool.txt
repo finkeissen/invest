@@ -1,0 +1,1085 @@
+
+Im Video suchen
+AI Trading Agent Holy Grail
+0:00
+The holy grail for AI trading agents is
+0:03
+having an agent that's able to learn
+0:05
+from its mistakes and make improvements
+0:08
+on the strategy or with the vision of
+0:10
+becoming more profitable. The thing is
+0:12
+is that most AIs that you interact with,
+0:14
+they are very simple. You give a prompt,
+0:17
+they give an output. But what we're
+0:18
+going to do today is use an extremely
+0:20
+powerful AI that automatically learns
+0:23
+from all the engagements that you have
+0:25
+with it. And I want to see if I can
+0:26
+apply that self-learning behavior to a
+0:28
+trading strategy. So instead of it being
+0:30
+prompt outcome, instead we're going to
+0:33
+produce a prompt that creates a strategy
+0:36
+that creates an outcome it can learn
+0:37
+from and therefore creates a new prompt
+0:40
+to build into the strategy. Again, what
+0:42
+we have is a self-improving trading
+0:44
+agent. You're going to have it running
+0:46
+24/7. And I've even made it so you can
+0:48
+just simply copy and paste one single
+0:51
+prompt, put it into your AI, and it will
+0:53
+set this whole thing up for you. And the
+0:54
+AI itself that we're using today is
+0:57
+completely free. It does this self-eing
+0:59
+process, this self-improvement process
+1:01
+for free. So, right after you subscribe,
+1:04
+let's get into it. Now, I've been doing
+1:06
+this a little while. And I know that
+1:08
+whenever you want to create a
+1:10
+self-arning or a self-improving process
+1:12
+with Claude, for example, you have to
+1:15
+describe how it's supposed to improve
+1:17
+itself. And so, it's it can get a little
+1:19
+bit laborious. It's very boring, and
+1:21
+it's very frustrating because the AI
+1:23
+doesn't quite understand it. However,
+1:25
+there's a new tool that has come out
+1:26
+over the last couple of months that's
+1:28
+been really lingering in the background
+1:30
+and today I've just seen the massive use
+1:31
+case for it in trading and it's called
+1:33
+Hermes agent. You might have heard of
+1:35
+like OpenClaw, this fully autonomous
+1:37
+thing that's just took the world by
+1:39
+storm. Well, Hermes in the background is
+1:41
+being touted as even better than
+1:43
+OpenClaw because of this self-learning
+1:45
+process. But Hermes agent on its own
+1:47
+isn't going to do all the work. We
+1:48
+actually have to put some smarts into
+1:50
+this. And this is what I do. I architect
+1:52
+agents to do exactly the thing I want
+1:54
+them to do. And so there were four
+Four Rules for a Good Agent
+1:56
+criteria that I came up with with
+1:58
+regards to what makes a good trading
+2:00
+agent. And I came up with these four. So
+2:03
+number one, it has to be accurate.
+2:05
+Number two, it has to be reliable.
+2:07
+Number three, it needs to have a very
+2:09
+well-defined goal. And number four, it
+2:11
+needs to be self-improving. It needs to
+2:13
+learn from its mistakes. Now, let's
+2:15
+first talk about the accuracy element
+2:17
+because when I say accurate, I mean, is
+2:19
+the data that's coming in accurate in
+2:21
+the first place? Are we able to take
+2:22
+that information in reliably and
+2:24
+consistently over time? And when we feed
+2:26
+that information to Hermes agent, is the
+2:28
+information actually accurate? Over the
+2:30
+last couple of weeks, I tested every
+2:31
+single AI that is in existence. And I
+2:34
+tested them on their ability to do
+2:36
+trading. And one of the most shocking
+2:37
+results from that is the inaccuracy in
+2:39
+the data. They're all supposed to be
+2:41
+pulling information from the same place,
+2:43
+but some AIs just don't do it properly.
+2:46
+And so there is inherently an accuracy
+2:48
+issue. So we need to make sure that that
+2:50
+is resolved, and we will resolve it in
+2:51
+this build. So when we're trying to get
+2:53
+accurate data through, we need to make
+2:54
+sure that the API connections are very
+2:56
+strong and reliable. We also need to
+2:58
+make sure that if we're pulling in
+3:00
+information from news feeds, for
+3:01
+example, that that information is also
+3:03
+accurate because the AI can sometimes
+3:05
+interpret text in different ways. If you
+3:08
+give the same article to multiple
+3:09
+different agents, they might have
+3:11
+different things to say and different
+3:12
+conclusions. So, we need to make sure
+3:13
+that there are rules in place so that
+3:16
+the conclusions are accurate and ideally
+3:18
+accurate and objective. And that brings
+3:20
+me on to the reliability section. We
+3:22
+need this agent to be reliable. So, what
+3:24
+do I mean by reliable? I would say that
+3:26
+reliable is it's always operating 24/7
+3:29
+and even if our computer goes down or
+3:32
+turns off or closes and it's still
+3:34
+executing on the system that we're going
+3:35
+to build today. We have also solved that
+3:37
+issue in the oneshot prompt. Now, it's
+3:39
+incredibly important that we move on to
+3:40
+number three, and that is that we have
+Goals Beat Predictions Every Time
+3:42
+to make sure that the agent has a
+3:43
+well-defined goal. So, let's talk about
+3:46
+goals a little bit deeper because it
+3:47
+will make all the sense in the world to
+3:48
+you in just a second. So, we need to
+3:50
+define in terms of a goal, obviously,
+3:52
+there is a destination. Most people, I'd
+3:54
+say 90% of people right now, if you're
+3:57
+creating a trading strategy, don't have
+3:58
+a destination, don't have a definition
+4:01
+of what achieving the goal actually
+4:02
+looks like. And so in light of being
+4:05
+thorough and actually accurate and
+4:06
+actually having a good agent. So we need
+4:08
+to define what is success and what is
+4:11
+failure. And it might sound a bit
+4:12
+abstract but in fact we need this
+4:14
+information. What is success in the
+4:16
+strategy? Is success making $10 a month?
+4:19
+Is success making a million dollars a
+4:21
+month? Obviously you have to operate in
+4:23
+the in the realms of what's possible. An
+4:25
+example of something that would be
+4:26
+impossible would be like saying I want
+4:28
+to make a million dollars a month and
+4:29
+here's $10 to start with. So what is
+4:32
+success? And the more details you can
+4:34
+give here, the better. Like if you know
+4:36
+anything about sharp scores, which is
+4:37
+essentially a a score that relates to
+4:40
+the profitability of a a trading
+4:42
+strategy, you would might want to put a
+4:43
+specific sharp score into the agent as a
+4:46
+goal, right? We want to work towards
+4:48
+this goal. Cuz if you think about it,
+4:50
+this agent's going to be doing a thing,
+4:52
+getting feedback, and then improving the
+4:53
+thing to do it again. And it's going to
+4:55
+do that over and over and over again
+4:56
+until that goal is achieved. And so we
+4:59
+need to define the goal, right? But we
+5:00
+also need to determine what is failure.
+5:02
+What does failure look like? And so what
+5:04
+the agent will be able to do in the end
+5:06
+is almost like look look at where it is
+5:08
+in its current results and say okay
+5:10
+anything in this direction is towards
+5:13
+the goal and this is good and anything
+5:15
+in the wrong direction away from the
+5:17
+goal closer to failure is bad. And it's
+5:20
+with that goal in mind that number four
+5:22
+comes in and that is that it needs to be
+Scientific Method for AI Strategy
+5:25
+self-improving. So it needs to be able
+5:27
+to assemble and organize information
+5:29
+properly. It needs to learn from the
+5:31
+outcomes. It needs to analyze the
+5:33
+outcomes. Were they towards the goal or
+5:36
+away from the goal? It then needs to
+5:37
+form its own hypothesis about why the
+5:40
+result was the way it was based on the
+5:42
+information it had. And then it needs to
+5:44
+make a second hypothesis about what it
+5:46
+should do next. So then it should take
+5:48
+that information and that learning apply
+5:50
+it to a updated strategy. And this
+5:53
+updated strategy, I think, should follow
+5:55
+the scientific model, which if you don't
+5:57
+know what the scientific method is, it's
+5:59
+essentially changing only one variable
+6:01
+and then seeing the outcome. Because if
+6:03
+you changed a load of variables and you
+6:04
+went more profitable, you wouldn't know
+6:06
+which variable was responsible for that
+6:08
+trade going well. And so you only change
+6:10
+one variable at a time and you run a
+6:12
+series of tests. Every time you get one
+6:14
+better, that is now the new baseline.
+6:16
+And then you make iterations on that new
+6:18
+baseline. And it needs to do this
+6:20
+inherently. And so all four of those
+6:21
+things make up what I think is a good
+6:24
+agent. So now's the time that we're
+6:26
+going to start creating this. I'm going
+6:27
+to demo it for you from start to finish.
+6:29
+The setup of this thing, the prompt,
+6:31
+everything is completely free for you to
+6:33
+use. I'm going to give you everything
+One-Shot Prompt Setup
+6:35
+that you need to copy and paste and get
+6:37
+this agent up and running with Hermes.
+6:39
+Okay. So, as always, every single prompt
+6:41
+is freely available for you to copy and
+6:43
+paste. And I hold them all in 01
+6:46
+systems. It's my own free community that
+6:48
+you can join right now. The link is in
+6:50
+the top line of this of the description.
+6:51
+And anytime I post any prompts in any
+6:53
+future videos, the links and the prompts
+6:56
+will all be in 01 systems. You'll come
+6:58
+here to start with. You'll click
+6:59
+classroom at the top. Then we're going
+7:01
+to click this big YouTube button. This
+7:02
+is for all the YouTube video prompts.
+7:04
+And you'll come across something titled
+7:06
+something similar to this.
+7:07
+Self-improving trading agent. Hermes
+7:10
+self-improving trading agent. The video
+7:11
+will also be in here cuz you can see
+7:13
+this is how I post it when it's live.
+7:15
+And we'll open that up. And we're going
+7:16
+to take this beautiful oneshot prompt.
+7:20
+It is so nice. And by the way, all of
+7:24
+the oneshot prompts that I give in my
+7:25
+videos, they improve over time as well
+7:27
+because we get feedback. People have
+7:29
+certain issues and then we improve them.
+7:31
+So the version that you're downloading
+7:32
+right now or that you get in 01 systems
+7:34
+will be the most up to date and the best
+7:36
+one we've had so far. And it's only
+7:37
+getting better. It's so cool. Okay. So,
+7:41
+what we're going to do is we're going to
+7:42
+come over to our terminal. And this is
+7:46
+me in my terminal. I'm just going to
+7:47
+increase the size so you can see it.
+7:49
+We're going to start a new session,
+7:52
+which I do with dangerously skip
+7:55
+permissions because I'm an absolute
+7:57
+savage. Okay. And then here we are.
+8:00
+We're going to we're in Claude and we're
+8:02
+just going to paste in our oneshot
+8:04
+prompt. So get ready because the journey
+8:07
+begins for your self-arning,
+8:09
+self-improving agent that's going to run
+8:11
+on Hermes. So as we go through this
+8:13
+process, we're going to do a series of
+8:15
+phases which you'll see on the screen
+8:17
+right now. So phase one was an
+8:19
+environment check. What this does, it's
+8:21
+really cool, is it makes sure uh it
+8:23
+knows which system you're on. Are you on
+8:25
+a Mac or on a Windows? And depending on
+8:26
+which one you choose, then it will take
+8:28
+you on a different journey because
+8:29
+there's different instructions for both.
+8:31
+So it said, okay, we can see that you're
+8:33
+on a Mac and you've got no.js. JS
+8:35
+installed on clawed code. Great. Step
+8:37
+two of seven in phase two, which is
+8:39
+defining the strategy. We're going to
+8:41
+build your trading strategy now.
+8:43
+Specifically, what success and failures
+8:45
+look like. The the agent uses this file
+8:47
+to score every trade. It's not just
+8:48
+vibes, it's just numbers. So, we have to
+8:51
+now decide which asset are we going to
+8:52
+be trading. Now, this is the moment
+8:54
+where if you already have a strategy,
+8:56
+you come down to number four and you
+8:58
+actually you actually would say
+8:59
+something along the lines of this. Hey,
+9:01
+I've actually already got a strategy and
+9:03
+it's called the Wacko Alpha strategy.
+9:06
+So, could you look for that in my
+9:08
+computer and, you know, use that as part
+9:11
+of this system? Or alternatively, you
+9:14
+could say, I don't have a strategy. Can
+9:15
+you just make me a basic one? And it
+9:17
+will make you a basic one. Uh, like a
+9:19
+basic solid one that everyone kind of
+9:21
+starts with and then you can let the
+9:23
+agent improve it over time rather than
+9:25
+you. Alternatively, you can build the
+9:27
+strategy in this system. The onboarding
+9:29
+agent will work with you to create a
+9:31
+strategy, too. So, you could choose
+9:33
+Salana or USD or Ethereum or Bitcoin or
+9:36
+any asset. Uh, but for now, I'm just
+9:38
+going to say number four. I've actually
+9:40
+already got a strategy. It's going to
+9:41
+call in to my information about that
+9:43
+strategy that I already have, and it's
+9:44
+going to build out my documentation
+9:46
+based on that, which I think is so cool.
+9:48
+So, let's let this work for a little
+9:50
+while. We're going to go onto phase
+9:52
+three after it's found my Wacko Alpha
+9:55
+strategy. You can see it actually has
+9:56
+found it right here. And what's
+9:58
+wonderful is I've created this strategy
+10:00
+already and it's got over a million and
+10:02
+a half data points that it's analyzed.
+10:04
+I've been letting it run for like six to
+10:06
+eight weeks just learning from the
+10:08
+information and I did that all manually
+10:10
+like instructing how to learn this
+10:13
+stuff. But the Hermes agent will just
+10:15
+learn it itself. So it says what I'm
+10:16
+seeing on the disc got wacko alpha the
+10:19
+dwal momentum and yield strategy. Um how
+10:22
+do I how do you want me to incorporate
+10:24
+wacko alpha into this Hermes deploy?
+10:25
+Yeah, let's actually point it at this
+10:27
+strategy. Like, let's actually This is
+10:29
+real money that's being traded, by the
+10:30
+way. So, maybe this is maybe a bit of a
+10:32
+mistake, but by the way, you can see the
+10:34
+progress of my £50,000 to £500,000 in a
+10:38
+year challenge that I'm doing. I'll call
+10:39
+it the the 10X challenge. You can see
+10:40
+that the dashboard is linked below. You
+10:42
+can see my progress. The frustration is
+10:44
+for me is that I haven't been able to
+10:46
+put as much money in as I wanted to. I
+10:48
+haven't had the dips in the market that
+10:49
+I wanted to make my purchases. So,
+10:51
+that's kind of been a little bit
+10:52
+difficult. Okay, so now it's actually
+10:54
+pulled out the goals and it said the
+10:57
+maximum return 30 days is this much 10x
+10:59
+in 6 months uh 40. It's defining all my
+11:02
+stuff. My my minimum sharp score, my max
+11:04
+draw down, my failure below reflection
+11:06
+every certain amount of days. It's got
+11:08
+all of this built in. So that's
+11:10
+wonderful. And it says, do you want to
+11:12
+confirm the Hermes and Wacko Alpha
+11:14
+setup? Yes. So I'm going to have lock in
+11:15
+as proposed. That's what I'm going to go
+11:17
+for cuz this is actually real money. But
+11:20
+I want you to know that I trust this
+11:22
+system and the way that it learns uh
+11:24
+sufficiently to put my real money on the
+11:26
+line. That's what we're doing here. And
+11:28
+let's move on to the next phase. Okay.
+11:29
+So phase three is now scaffolding the
+11:32
+Hermes side state. So scaffolding all
+11:34
+the folders and files to be properly
+11:37
+analyzed by Hermes when we actually come
+11:40
+to install Hermes. Okay. Now we're on
+11:42
+phase four which has skipped actually
+11:44
+because the Wacko alpha is already
+11:45
+deployed. If you hadn't got a strategy
+11:47
+already, it would start to deploy that
+11:49
+strategy. uh to make it live. You might
+11:50
+have to connect in like APIs or whatever
+11:52
+to make it trade for you. But I've got a
+11:54
+video on how to actually make things
+11:56
+trade. It's like clawed code with
+11:58
+trading view that actually trades. You
+12:00
+can also find that in 01 systems, by the
+12:02
+way. The whole prompt for that is there.
+12:03
+So, I'm having a little bit of an issue
+12:05
+logging into railway, which is going to
+12:06
+be the place where we host this 24/7.
+12:09
+So, it can run regardless of whether the
+12:11
+computer's on or not. It's saying it
+12:13
+can't run interactive login from inside
+12:15
+this session. Please run this in the
+12:18
+prompt yourself. So, all I'm going to do
+12:19
+is going to come over here in my cursor,
+12:22
+split this terminal so I can start a new
+12:24
+terminal session. And I'm just pasting
+Trading Real Money With Hermes
+12:26
+in this. So, I'm going to paste that in.
+12:28
+It should then open up Railway for me to
+12:30
+get me to log in. And it's a success.
+12:32
+So, I can close the page. Boom. That's
+12:34
+done. I can now close that. And I'm now
+12:37
+logged in. So, I can say done,
+12:38
+continuing. I love these oneshot prompts
+12:41
+because I built them so that it opens up
+12:43
+these browsers for you. So, if you don't
+12:45
+have a Railway account, by the way, what
+12:47
+would have happened just then is that it
+12:49
+would have opened up Railway and you
+12:50
+just make an account, right? And then
+12:52
+you come back and say, "Hey, I've just
+12:53
+made an account." And it's free for so
+12:55
+much usage. Like, I've only just now
+12:57
+started having to pay for Railway
+12:58
+because I and I've cuz I've got like 50
+13:00
+projects on there running 24/7, right?
+13:02
+So, it's now using the CLI, it's called,
+13:06
+to integrate with Railway. So anytime
+13:09
+you publish a new strategy or you make a
+13:11
+change, it will update on the 24/7
+13:13
+server and just that's it. Just kind of
+13:16
+works like that. So that's what's great
+13:17
+about Railway cuz it works in this way
+13:19
+with your terminal. Any project that
+13:21
+you're doing is just kind of updating.
+13:22
+It's now just seen uh 24 gain trades and
+13:26
+22 loss trades and it's converting those
+13:28
+into a Hermes readable ledger. So it's
+13:31
+now converting everything to be
+13:33
+perfectly primed and ready for Hermes to
+13:36
+take a look at it. Uh something else has
+13:37
+just happened here. Oh yes, these new
+13:39
+documents have just uh come up. Sorry
+13:41
+about my desktop. Let's hide all the
+13:42
+clutter. So my strategy document has now
+13:46
+been populated. Um it's also o opening
+13:48
+them in my cursor as well. That's really
+13:50
+helpful. It's got my strategy. This is
+13:52
+my strategy. The maximum amount of
+13:53
+positions I'm going to hold is 12. My
+13:55
+slippage tolerance is this. My gas
+13:57
+reserve is this. The scorer weights
+13:59
+everything. This is all pulled from my
+14:00
+actual uh strategy. It's also defined my
+14:03
+goals, right? My target uh return over
+14:05
+30 days is 4.7 which is 47% by the way.
+14:09
+Um that's my target return for every 30
+14:11
+days. So it's going to be working until
+14:13
+it achieves these goals. These are all
+14:15
+the trades that have taken place as
+14:16
+well. How cool is that? So it's just
+14:18
+organizing all these files now so Hermes
+14:21
+can have a look at it and and learn from
+14:22
+it. So right now we're in the handoff to
+14:24
+Hermes phase like just like that. So I
+14:26
+hope you're if you're following along I
+14:28
+think it's about time to subscribe,
+14:29
+don't you? Anyway, so it's basically
+14:32
+looking at it's we're Oh my goodness, it
+14:35
+already installed Hermes. It already did
+14:37
+it. It already installed Hermes. That is
+14:40
+insane. Actually, I didn't realize that
+14:42
+would just happen so quickly. Okay, so
+14:44
+Hermes has now been installed. I can now
+14:46
+type in Hermes in this terminal or any
+14:49
+other terminal. So, let's go over to the
+14:51
+split terminal again. And I'm just going
+14:52
+to type Hermes in here just to see if it
+14:55
+is in fact I can't cuz I can't quite
+14:56
+believe that it did install. It did. And
+14:58
+now I fully have Hermes just up and
+15:00
+running. That was just so quick. We
+15:02
+could do a whole video on Hermes, by the
+15:04
+way. It's unbelievable. But what it's
+15:06
+done right now is it has outlined
+15:08
+everything that it's doing. So now that
+15:10
+we know Hermes is actually installed, we
+15:11
+can come back to that later. So let's
+15:13
+have a look at everything. So final
+15:15
+confirmation, we have a self-improving
+15:17
+trading agent which is deployed right
+15:19
+now and adapted for my Wacko Alpha
+15:21
+strategy which trade real money by the
+15:23
+way. It's working on railway 24/7 and
+Bittensor Subnet Strategy Live
+15:26
+its strategy is using the bit tensor
+15:28
+subnetss. We're looking for that return.
+15:31
+We're looking for that as a max draw
+15:32
+down minimum sharp of one. The brain is
+15:35
+Hermes. It's going to be watching the
+15:36
+live service and weekly cadence. Hermes
+15:38
+owns the portfolio mechanics and score
+15:40
+weights. And Cornelius, who's another
+15:42
+agent of mine, owns the filter
+15:44
+thresholds. The first cycle is read only
+15:46
+and review only. It's going to flip the
+15:48
+strategy
+15:49
+uh YAML mode to live when it's ready.
+15:52
+So, it's actually not trading yet. And
+15:54
+when it's ready, Hermes will decide it's
+15:56
+time to go, baby. And then we'll start
+15:58
+making some money. Okay. So, what
+16:00
+happens from here? My strategy will keep
+16:02
+firing every 30 minutes on railway,
+16:03
+which it does already. It does a daily
+16:05
+reshuffle and a 30 minute reshuffle.
+16:07
+Cornelius, my other agent, is going to
+16:09
+keep tuning the learned parameters JSON
+16:12
+every week. That means he's like looking
+16:14
+at all the data that comes in, those one
+16:16
+and a half million data points that we
+16:17
+have right now, and kind of learning
+16:18
+from those. So, I bet Cornelius and
+16:20
+Hermes now are just kind of together.
+16:22
+Hermes reviews the trades weekly, but he
+16:24
+has a 3-day offset from Cornelius.
+16:26
+Interesting. The first Hermes cycle will
+16:28
+produce a markdown review with no actual
+16:30
+writing. Um, I will approve by setting
+16:32
+mode. Um, so I can come here and just
+16:34
+like approve the strategy from there.
+16:36
+And a day after check-in, I can do any
+16:38
+of the check-ins that I want using these
+16:40
+commands. To go live, not today, is to
+16:42
+edit the Hermes trading strategy. And
+16:45
+Hermes will start writing on the next
+16:47
+weekly cycle. Hermes is watching. Close
+16:49
+this terminal. The agent is running.
+16:51
+Kablam. Kaboom. There we go. What about
+16:54
+that then?
+16:57
+So cool. Okay. So, I really want to hear
+17:00
+your stories about this when you've
+17:02
+installed. The best place to come and do
+17:03
+that is to come into the classroom.
+17:05
+There's another person that's joined
+17:06
+who's actually taken on the 60-day
+17:08
+challenge. Come into the YouTube video
+17:09
+prompts. Take your prompt here. come
+17:12
+over to the community once you've done
+17:13
+it and tell us all about it, how cool it
+17:15
+was and that that it works wonderfully
+17:17
+the response of the last uh video
+17:20
+regarding the uh Marov uh method
+17:24
+strategy. People have absolutely you can
+17:27
+see like no one has any issues with this
+17:29
+thing. They loved it and they're using
+17:31
+it and people are very excited about it.
+17:33
+But let's see the response of this one.
+17:34
+So we'll have a similar post like that
+17:35
+on the community when you come in.
+17:37
+Anyway, I want to thank you for being
+17:38
+here. This is so much fun, right? um
+17:41
+click like and if you can there's
+17:43
+actually a capability of you to do
+17:44
+something called a hype. So if you got
+17:46
+this far in the video hype the video on
+17:48
+a on the phone you can kind of like
+17:49
+scroll across. If you click like the
+17:51
+hype button will appear below. I think
+17:53
+it really helps viewership. So give it a
+17:55
+go. You can also hype on a computer but
+17:57
+I don't know where it is. So anyway
+17:59
+that's all. Uh have fun with it. Right.

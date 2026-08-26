@@ -32,6 +32,57 @@ This means that **a healthy life, education, relationships, stability, and orien
 
 Not all gains are directly comparable. Some trade-offs must remain visible instead of being hidden behind one single score.
 
+## Extension under development: investment as life protection and resilience
+
+A further direction of the repository is to make explicit something that is already implicit in the current framework:
+
+**investment is not only about expanding future gain, but also about securing the conditions of a good life against disruption, loss, and breakdown.**
+
+A person, household, group, or institution does not only invest in order to grow. They also invest in order to:
+
+- prevent severe loss
+- reduce exposure to major downside
+- buffer shocks
+- preserve minimum functioning
+- recover after damage
+- remain able to act under stress and uncertainty
+
+This becomes especially important when the relevant risks are not marginal but potentially life-altering or irreversible.
+
+Examples include:
+
+- accident, illness, disability, or death
+- burnout, exhaustion, or capability loss
+- personal financial crisis or debt stress
+- unemployment or income interruption
+- relationship breakdown or care overload
+- inflation, banking stress, or asset destruction
+- institutional failure, political instability, or war
+- broader social or infrastructure disruption
+
+In this extended direction, the central question is not only:
+
+> Which allocation of scarce resources improves future outcomes?
+
+but also:
+
+> Which allocation of scarce resources secures the preconditions of a good life and makes severe disruptions more preventable, more survivable, or more recoverable across the life course?
+
+This pushes the framework toward a more explicit treatment of:
+
+- protection alongside expansion
+- resilience alongside gain
+- preservation alongside growth
+- recovery capacity alongside performance
+- life-course sequencing alongside isolated decision quality
+
+It also implies a second-order question:
+
+> How should an investment framework observe and correct its own protective logic, so that attempts at safety do not create blindness, false security, hidden fragility, or over-defensive life design?
+
+This is not a move toward total security. It is a move toward clearer treatment of downside, thresholds, irreversibility, and the minimum conditions that keep action and life viable.
+
+
 ## Core idea
 
 The central claim of the repository is simple:
@@ -103,6 +154,8 @@ Invest-GT is **not**:
 A mature version of the repository should help answer questions such as:
 
 - What should a person prioritize first: safety, health, education, income, coordination, or recovery?
+- Which resources and safeguards must be in place so that a good life remains viable under disruption or loss?
+- Which protections are best understood as prevention, buffering, transfer, recovery, or adaptation?
 - Which investments increase future optionality?
 - Which investments mainly preserve rather than expand?
 - Which actions create hidden collateral damage?
@@ -134,6 +187,8 @@ The repository follows a few non-negotiable principles:
 8. **Trade-offs should stay visible.**
 9. **Maintenance and preservation are valid investments.**
 10. **The avoidance of major downside can be more important than nominal upside.**
+11. **Protection, buffering, and recovery are valid investment functions, not secondary add-ons.**
+12. **A viable life portfolio must be judged across the life course, not only at one decision point.**
 
 ## Project posture
 
@@ -164,6 +219,8 @@ The repository currently gives special attention to:
 - lesser-evil trade-offs
 - positive-sum vs. zero-sum outcomes
 - risk, reversibility, and downside analysis
+- life protection, shock absorption, and recovery capacity
+- the design of resilient life portfolios across the life course
 - the eventual compilation of life plans into executable portfolios
 
 ## Related approaches

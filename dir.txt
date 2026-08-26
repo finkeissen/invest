@@ -1,0 +1,364 @@
+.:
+insgesamt 88
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 agents
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 configs
+drwxr-xr-x  4 ef ef  4096 Mär 12 10:08 data
+drwxrwxr-x  2 ef ef  4096 Mär 13 10:39 decisions
+-rw-rw-r--  1 ef ef     0 Mär 15 11:58 dir.txt
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:58 docs
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 hypotheses
+-rw-rw-r--  1 ef ef   645 Mär  1 09:44 LICENSE
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 models
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 notebooks
+drwxrwxr-x 10 ef ef  4096 Mär 15 11:58 pipeline
+drwxr-xr-x 10 ef ef  4096 Mär 13 10:40 pipeline_alt
+-rw-r--r--  1 ef ef  3908 Mär 13 10:48 PIPELINE.md
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 prompts
+-rw-r--r--  1 ef ef 11752 Mär 15 11:26 README.md
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 reports
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:20 run
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 runtime
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 scenarios
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 simulations
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:26 tests
+
+./agents:
+insgesamt 4
+-rw-r--r-- 1 ef ef 147 Mär 12 09:26 README.md
+
+./configs:
+insgesamt 4
+-rw-r--r-- 1 ef ef 71 Mär 12 09:26 README.md
+
+./data:
+insgesamt 8
+drwxr-xr-x 2 ef ef 4096 Mär 12 09:26 processed
+drwxr-xr-x 2 ef ef 4096 Mär 12 09:26 raw
+
+./data/processed:
+insgesamt 4
+-rw-r--r-- 1 ef ef 76 Mär 12 09:26 README.md
+
+./data/raw:
+insgesamt 4
+-rw-r--r-- 1 ef ef 72 Mär 12 09:26 README.md
+
+./decisions:
+insgesamt 136
+-rw-r--r-- 1 ef ef 11485 Mär 13 11:03 ADR-001-repository-architecture.md
+-rw-r--r-- 1 ef ef 18020 Mär 13 11:03 ADR-002-human-vs-canonical-layers.md
+-rw-r--r-- 1 ef ef 13909 Mär 13 11:03 ADR-003-snapshots-and-run-manifests-as-reproducibility-core.md
+-rw-r--r-- 1 ef ef 14525 Mär 13 11:03 ADR-004-validation-and-evaluation-as-first-class-layers.md
+-rw-r--r-- 1 ef ef 14234 Mär 13 11:03 ADR-005-configuration-subordinate-to-artifacts.md
+-rw-r--r-- 1 ef ef 15950 Mär 13 11:03 ADR-006-registries-as-governance-layer.md
+-rw-r--r-- 1 ef ef  6137 Mär 13 11:12 ADR-008-reports-remain-downstream-not-evidence-layer.md
+-rw-r--r-- 1 ef ef  4289 Mär 13 11:12 ADR-009-governance-truth-lives-in-registries-status-and-manifests.md
+-rw-r--r-- 1 ef ef  3291 Mär 13 11:12 ADR-010-major-artifacts-require-stable-ids-status-and-supersession.md
+-rw-r--r-- 1 ef ef  3076 Mär 13 11:12 ADR-011-inputs-governed-through-raw-curated-canonical-snapshot-layers.md
+-rw-r--r-- 1 ef ef  3021 Mär 13 11:12 ADR-012-core-artifact-families-must-not-collapse-into-each-other.md
+-rw-r--r-- 1 ef ef  3245 Mär 13 11:12 ADR-013-local-first-state-with-strict-separation-from-canonical-state.md
+-rw-r--r-- 1 ef ef  3044 Mär 13 11:12 ADR-014-failure-invalidations-and-rejections-must-remain-visible.md
+-rw-r--r-- 1 ef ef  3895 Mär 13 11:12 ADR-015-progressive-formalization-lightweight-first-but-governed.md
+
+./docs:
+insgesamt 360
+-rw-r--r-- 1 ef ef  5576 Mär 12 11:33 agent-scoring.md
+-rw-rw-r-- 1 ef ef  1636 Mär 12 10:26 architecture.md
+-rw-rw-r-- 1 ef ef 16252 Mär 12 22:10 artifacts.md
+-rw-r--r-- 1 ef ef  1654 Mär 13 10:48 collateral-damage-and-externalities.md
+-rw-rw-r-- 1 ef ef 20712 Mär 12 22:32 configuration.md
+-rw-rw-r-- 1 ef ef 25277 Mär 12 22:15 contracts.md
+-rw-rw-r-- 1 ef ef 22211 Mär 12 22:19 data-governance.md
+-rw-r--r-- 1 ef ef  8248 Mär 13 11:52 ecosystem-position.md
+-rw-rw-r-- 1 ef ef   709 Mär 12 11:06 examples.md
+-rw-rw-r-- 1 ef ef  7899 Mär 12 22:05 finkeissen-architecture.md
+-rw-rw-r-- 1 ef ef 15701 Mär 12 22:12 ids-and-versioning.md
+-rw-r--r-- 1 ef ef 25362 Mär 12 11:34 legacy-approaches.md
+-rw-r--r-- 1 ef ef  6395 Mär 13 10:58 life-plan-compiler.md
+-rw-r--r-- 1 ef ef  4603 Mär 15 11:28 overview.md
+-rw-r--r-- 1 ef ef 12413 Mär 13 10:48 personal-and-collective-investment.md
+-rw-r--r-- 1 ef ef  2389 Mär 12 10:26 pipeline.md
+-rw-rw-r-- 1 ef ef 17603 Mär 12 22:16 registries.md
+-rw-r--r-- 1 ef ef 10964 Mär 13 11:52 related-approaches.md
+-rw-rw-r-- 1 ef ef 22463 Mär 12 22:30 reports.md
+-rw-rw-r-- 1 ef ef   632 Mär 12 11:06 roadmap.md
+-rw-rw-r-- 1 ef ef 20731 Mär 12 22:28 run-manifests.md
+-rw-rw-r-- 1 ef ef 10828 Mär 12 22:07 scope.md
+-rw-rw-r-- 1 ef ef 20611 Mär 12 22:21 snapshots.md
+-rw-rw-r-- 1 ef ef 23483 Mär 12 22:25 validation-and-evaluation.md
+-rw-rw-r-- 1 ef ef  1224 Mär 12 11:06 validation.md
+
+./hypotheses:
+insgesamt 4
+-rw-r--r-- 1 ef ef 96 Mär 12 09:26 README.md
+
+./models:
+insgesamt 4
+-rw-r--r-- 1 ef ef 76 Mär 12 09:26 README.md
+
+./notebooks:
+insgesamt 4
+-rw-r--r-- 1 ef ef 77 Mär 12 09:26 README.md
+
+./pipeline:
+insgesamt 204
+drwxrwxr-x 10 ef ef  4096 Mär 15 11:57 00_inputs
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 01_hypotheses
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 02_agents
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 03_models
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 04_runtime
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 05_simulations
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 06_tests
+drwxrwxr-x  2 ef ef  4096 Mär 15 11:57 07_reports
+-rw-r--r--  1 ef ef 12423 Mär 15 10:57 README.md
+-rw-r--r--  1 ef ef 11752 Mär 15 11:26 step01_readme_changes_redone.md
+-rw-r--r--  1 ef ef  5805 Mär 15 11:24 step02_life-portfolio-theory.md
+-rw-r--r--  1 ef ef  4603 Mär 15 11:28 step03_overview_changes.md
+-rw-rw-r--  1 ef ef 15858 Mär 15 11:33 step04_personal-and-collective-investment.md
+-rw-rw-r--  1 ef ef  7807 Mär 15 11:35 step05_docs_life-plan-compiler.md
+-rw-rw-r--  1 ef ef  4519 Mär 15 11:36 step06_docs_collateral-damage-and-externalities.md
+-rw-rw-r--  1 ef ef  3429 Mär 15 11:38 step07_pipeline_03_models_model-family-life-portfolio.md
+-rw-rw-r--  1 ef ef  4095 Mär 15 11:39 step08_pipeline_03_models_investment-schema.md
+-rw-rw-r--  1 ef ef  4487 Mär 15 11:41 step09_pipeline_03_models_model-family-risk-and-reversibility\ (1).md
+-rw-rw-r--  1 ef ef  1287 Mär 15 11:42 step10_pipeline_00_inputs_constraints_README.md
+-rw-rw-r--  1 ef ef  1682 Mär 15 11:44 step11_pipeline_00_inputs_priorities_README.md
+-rw-rw-r--  1 ef ef   564 Mär 15 11:45 step12_pipeline_00_inputs_assumptions_README.md
+-rw-rw-r--  1 ef ef  4240 Mär 15 11:46 step13_pipeline_00_inputs_assumptions_base-assumptions.md
+-rw-rw-r--  1 ef ef  5074 Mär 15 11:47 step14_pipeline_00_inputs_assets_asset-universe.md
+-rw-rw-r--  1 ef ef  4275 Mär 15 11:48 step15_pipeline_00_inputs_events_event-taxonomy.md
+-rw-rw-r--  1 ef ef  4903 Mär 15 11:49 step16_pipeline_00_inputs_indicators_indicator-catalog.md
+-rw-rw-r--  1 ef ef  1546 Mär 15 11:50 step17_pipeline_00_inputs_assets_README.md
+-rw-rw-r--  1 ef ef  1217 Mär 15 11:51 step18_pipeline_00_inputs_events_README.md
+-rw-rw-r--  1 ef ef  3808 Mär 15 11:52 step19_pipeline_00_inputs_README.md
+-rw-rw-r--  1 ef ef  7482 Mär 15 11:52 step20_pipeline_03_models_README.md
+-rw-rw-r--  1 ef ef  7485 Mär 15 11:53 step21_pipeline_01_hypotheses_README.md
+-rw-rw-r--  1 ef ef  4854 Mär 15 11:54 step22_pipeline_01_hypotheses_hypothesis-template.md
+
+./pipeline/00_inputs:
+insgesamt 32
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 actors
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 domains
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 groups
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 indicators
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 persons
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 priorities
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 snapshots
+drwxrwxr-x 2 ef ef 4096 Mär 15 11:57 universe
+
+./pipeline/00_inputs/actors:
+insgesamt 8
+-rw-r--r-- 1 ef ef 3667 Mär 15 10:57 actor-taxonomy.md
+-rw-r--r-- 1 ef ef 1227 Mär 15 10:57 README.md
+
+./pipeline/00_inputs/domains:
+insgesamt 4
+-rw-r--r-- 1 ef ef 688 Mär 15 10:57 README.md
+
+./pipeline/00_inputs/groups:
+insgesamt 4
+-rw-r--r-- 1 ef ef 756 Mär 15 10:57 README.md
+
+./pipeline/00_inputs/indicators:
+insgesamt 4
+-rw-r--r-- 1 ef ef 718 Mär 15 10:57 README.md
+
+./pipeline/00_inputs/persons:
+insgesamt 4
+-rw-r--r-- 1 ef ef 761 Mär 15 10:57 README.md
+
+./pipeline/00_inputs/priorities:
+insgesamt 12
+-rw-r--r-- 1 ef ef 2694 Mär 15 10:57 priority-rules-conflict.md
+-rw-r--r-- 1 ef ef 2961 Mär 15 10:57 priority-rules-group.md
+-rw-r--r-- 1 ef ef 3109 Mär 15 10:57 priority-rules-person.md
+
+./pipeline/00_inputs/snapshots:
+insgesamt 8
+-rw-r--r-- 1 ef ef  507 Mär 15 10:57 README.md
+-rw-r--r-- 1 ef ef 1562 Mär 15 10:57 snapshot-convention.md
+
+./pipeline/00_inputs/universe:
+insgesamt 8
+-rw-r--r-- 1 ef ef 3050 Mär 15 10:57 coverage.md
+-rw-r--r-- 1 ef ef  749 Mär 15 10:57 README.md
+
+./pipeline/01_hypotheses:
+insgesamt 24
+-rw-r--r-- 1 ef ef 5079 Mär 15 10:57 hypothesis-01-sanctions-sector-rotation.md
+-rw-r--r-- 1 ef ef 5074 Mär 15 10:57 hypothesis-02-election-uncertainty-policy-sensitive-volatility.md
+-rw-r--r-- 1 ef ef 5252 Mär 15 10:57 hypothesis-03-industrial-policy-supply-chain-repricing.md
+
+./pipeline/02_agents:
+insgesamt 8
+-rw-r--r-- 1 ef ef 6178 Mär 15 10:57 README.md
+
+./pipeline/03_models:
+insgesamt 8
+-rw-r--r-- 1 ef ef 1812 Mär 15 10:57 model-family-group-distribution.md
+-rw-r--r-- 1 ef ef 1959 Mär 15 10:57 model-family-positive-sum-vs-zero-sum.md
+
+./pipeline/04_runtime:
+insgesamt 8
+-rw-r--r-- 1 ef ef 6760 Mär 15 10:57 README.md
+
+./pipeline/05_simulations:
+insgesamt 4
+-rw-r--r-- 1 ef ef 678 Mär 15 10:57 README.md
+
+./pipeline/06_tests:
+insgesamt 4
+-rw-r--r-- 1 ef ef 3536 Mär 15 10:57 README.md
+
+./pipeline/07_reports:
+insgesamt 4
+-rw-r--r-- 1 ef ef 4085 Mär 15 10:57 README.md
+
+./pipeline_alt:
+insgesamt 44
+drwxr-xr-x 14 ef ef  4096 Mär 13 10:51 00_inputs
+drwxr-xr-x  2 ef ef  4096 Mär 12 10:35 01_hypotheses
+drwxr-xr-x  2 ef ef  4096 Mär 12 09:14 02_agents
+drwxr-xr-x  2 ef ef  4096 Mär 13 11:00 03_models
+drwxr-xr-x  2 ef ef  4096 Mär 13 10:34 04_runtime
+drwxr-xr-x  2 ef ef  4096 Mär 13 10:40 05_simulations
+drwxr-xr-x  2 ef ef  4096 Mär 13 10:40 06_tests
+drwxr-xr-x  2 ef ef  4096 Mär 13 10:36 07_reports
+-rw-r--r--  1 ef ef 11629 Mär 13 10:39 README.md
+
+./pipeline_alt/00_inputs:
+insgesamt 52
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 actors
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 assets
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 assumptions
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:50 constraints
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:50 domains
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 events
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:50 groups
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 indicators
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:50 persons
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:59 priorities
+-rw-r--r-- 1 ef ef 2586 Mär 13 10:48 README.md
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 snapshots
+drwxr-xr-x 2 ef ef 4096 Mär 13 10:25 universe
+
+./pipeline_alt/00_inputs/actors:
+insgesamt 8
+-rw-r--r-- 1 ef ef 3138 Mär 13 09:23 actor-taxonomy.md
+-rw-r--r-- 1 ef ef  705 Mär 13 09:23 README.md
+
+./pipeline_alt/00_inputs/assets:
+insgesamt 8
+-rw-r--r-- 1 ef ef 2990 Mär 13 09:23 asset-universe.md
+-rw-r--r-- 1 ef ef  573 Mär 13 09:23 README.md
+
+./pipeline_alt/00_inputs/assumptions:
+insgesamt 8
+-rw-r--r-- 1 ef ef 2921 Mär 13 09:23 base-assumptions.md
+-rw-r--r-- 1 ef ef  280 Mär 13 09:23 README.md
+
+./pipeline_alt/00_inputs/constraints:
+insgesamt 4
+-rw-r--r-- 1 ef ef 375 Mär 13 10:48 README.md
+
+./pipeline_alt/00_inputs/domains:
+insgesamt 4
+-rw-r--r-- 1 ef ef 334 Mär 13 10:48 README.md
+
+./pipeline_alt/00_inputs/events:
+insgesamt 8
+-rw-r--r-- 1 ef ef 2817 Mär 13 09:23 event-taxonomy.md
+-rw-r--r-- 1 ef ef  253 Mär 13 09:23 README.md
+
+./pipeline_alt/00_inputs/groups:
+insgesamt 4
+-rw-r--r-- 1 ef ef 414 Mär 13 10:48 README.md
+
+./pipeline_alt/00_inputs/indicators:
+insgesamt 8
+-rw-r--r-- 1 ef ef 2601 Mär 13 09:23 indicator-catalog.md
+-rw-r--r-- 1 ef ef  384 Mär 13 09:23 README.md
+
+./pipeline_alt/00_inputs/persons:
+insgesamt 4
+-rw-r--r-- 1 ef ef 405 Mär 13 10:48 README.md
+
+./pipeline_alt/00_inputs/priorities:
+insgesamt 16
+-rw-r--r-- 1 ef ef 2325 Mär 13 10:58 priority-rules-conflict.md
+-rw-r--r-- 1 ef ef 2644 Mär 13 10:58 priority-rules-group.md
+-rw-r--r-- 1 ef ef 2660 Mär 13 10:58 priority-rules-person.md
+-rw-r--r-- 1 ef ef  363 Mär 13 10:48 README.md
+
+./pipeline_alt/00_inputs/snapshots:
+insgesamt 8
+-rw-r--r-- 1 ef ef  232 Mär 13 09:23 README.md
+-rw-r--r-- 1 ef ef 1162 Mär 13 09:23 snapshot-convention.md
+
+./pipeline_alt/00_inputs/universe:
+insgesamt 8
+-rw-r--r-- 1 ef ef 2734 Mär 13 09:23 coverage.md
+-rw-r--r-- 1 ef ef  388 Mär 13 09:23 README.md
+
+./pipeline_alt/01_hypotheses:
+insgesamt 36
+-rw-r--r-- 1 ef ef 4651 Mär 13 10:29 hypothesis-01-sanctions-sector-rotation.md
+-rw-r--r-- 1 ef ef 4667 Mär 13 10:29 hypothesis-02-election-uncertainty-policy-sensitive-volatility.md
+-rw-r--r-- 1 ef ef 4878 Mär 13 10:29 hypothesis-03-industrial-policy-supply-chain-repricing.md
+-rw-r--r-- 1 ef ef 3430 Mär 13 10:29 hypothesis-template.md
+-rw-r--r-- 1 ef ef 5367 Mär 13 10:29 README.md
+
+./pipeline_alt/02_agents:
+insgesamt 8
+-rw-r--r-- 1 ef ef 5883 Mär 13 10:30 README.md
+
+./pipeline_alt/03_models:
+insgesamt 28
+-rw-r--r-- 1 ef ef 2588 Mär 13 10:58 investment-schema.md
+-rw-r--r-- 1 ef ef 1345 Mär 13 10:58 model-family-group-distribution.md
+-rw-r--r-- 1 ef ef 1578 Mär 13 10:58 model-family-life-portfolio.md
+-rw-r--r-- 1 ef ef 1520 Mär 13 10:58 model-family-positive-sum-vs-zero-sum.md
+-rw-r--r-- 1 ef ef 1454 Mär 13 10:58 model-family-risk-and-reversibility.md
+-rw-r--r-- 1 ef ef 6729 Mär 13 10:31 README.md
+
+./pipeline_alt/04_runtime:
+insgesamt 8
+-rw-r--r-- 1 ef ef 6450 Mär 13 10:33 README.md
+
+./pipeline_alt/05_simulations:
+insgesamt 4
+-rw-r--r-- 1 ef ef 333 Mär 13 10:34 README.md
+
+./pipeline_alt/06_tests:
+insgesamt 4
+-rw-r--r-- 1 ef ef 3189 Mär 13 10:35 README.md
+
+./pipeline_alt/07_reports:
+insgesamt 4
+-rw-r--r-- 1 ef ef 3743 Mär 13 10:36 README.md
+
+./prompts:
+insgesamt 4
+-rw-r--r-- 1 ef ef 74 Mär 12 09:26 README.md
+
+./reports:
+insgesamt 4
+-rw-r--r-- 1 ef ef 67 Mär 12 09:26 README.md
+
+./run:
+insgesamt 0
+
+./runtime:
+insgesamt 4
+-rw-r--r-- 1 ef ef 67 Mär 12 09:26 README.md
+
+./scenarios:
+insgesamt 4
+-rw-r--r-- 1 ef ef 66 Mär 12 09:26 README.md
+
+./simulations:
+insgesamt 4
+-rw-r--r-- 1 ef ef 90 Mär 12 09:26 README.md
+
+./tests:
+insgesamt 4
+-rw-r--r-- 1 ef ef 79 Mär 12 09:26 README.md

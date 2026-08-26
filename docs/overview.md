@@ -4,11 +4,11 @@
 
 **Invest-GT** explores how political and geopolitical dynamics shape strategic investment behavior, and how those investment responses feed back into institutions, incentives, and market conditions.
 
-The framework is designed for structured experimentation rather than single-shot prediction.
+The framework is designed for structured experimentation rather than single-shot prediction. It also treats investment more broadly as the design of conditions under which persons and collectives remain capable of acting under uncertainty, including under stress, disruption, and irreversible loss.
 
 ## Working definition of investment
 
-In this project, **investment** means the deliberate allocation of scarce resources toward future value under uncertainty. Depending on the model, those resources may include:
+In this project, **investment** means the deliberate allocation of scarce resources toward future value under uncertainty. That future value may include not only expansion, gain, and optional upside, but also resilience, preservation, recoverability, and the protection of the conditions required for a good life. Depending on the model, those resources may include:
 
 - capital
 - time
@@ -21,7 +21,7 @@ In this project, **investment** means the deliberate allocation of scarce resour
 - social trust
 - meaning-bearing discipline
 
-This broader definition is useful when modeling persons, groups, institutions, governments, firms, and markets within the same simulation environment.
+This broader definition is useful when modeling persons, groups, institutions, governments, firms, and markets within the same simulation environment. It also makes it possible to study investment as both value creation and the mitigation of downside across the life course.
 
 ## Why this project exists
 
@@ -67,3 +67,26 @@ The broader investment view implies several practical commitments:
 - gain claims should identify beneficiaries, costs, and harms
 - health, education, and meaning are valid investment domains
 - a mature version of the repo should support the compilation of life goals into executable portfolios of action
+- protective investment should be treated as a first-class concern alongside growth, expansion, and strategic positioning
+- life-portfolio design should distinguish between prevention, buffering, transfer, recovery, and adaptation rather than treating all security as a single bucket
+
+
+## Emerging extension: investment as life protection and resilience
+
+A natural extension of the framework is to ask not only how resources generate future gain, but how they secure the minimum conditions for a good life across changing life phases and under serious risk.
+
+This includes questions such as:
+
+- which resources are most critical for preserving agency under stress
+- how persons and collectives can protect against severe personal, financial, and societal disruptions
+- which forms of investment prevent harm, buffer shocks, transfer exposure, support recovery, or preserve long-run optionality
+- how protective allocations can be evaluated without collapsing into false security or over-defensive stagnation
+
+This extension keeps the project within its existing logic: investment remains the allocation of scarce resources under uncertainty, but the relevant future value now explicitly includes the continued viability of a good life and the ability to recover after loss.
+
+## Two-level observation
+
+This direction also introduces a more explicit second-order requirement:
+
+- first-order: which allocations improve resilience, preserve function, or reduce catastrophic downside
+- second-order: how the framework observes and corrects its own protection logic, including blind spots, hidden trade-offs, and misleading feelings of safety
