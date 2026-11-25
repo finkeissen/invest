@@ -323,12 +323,14 @@ At every stage, the repository should prefer:
 
 ## License
 
-This repository is licensed under the **GNU Affero General Public License v3.0**.
+This repository is licensed under the **Creative Commons Attribution-ShareAlike
+4.0 International (CC BY-SA 4.0)** licence.
 
-You may copy, modify and distribute the work under the terms of the AGPL-3.0.
-If you modify the software and run it on a network server, you must make the
-complete corresponding source code available to the users of that server.
+You may copy, modify and distribute the work under the terms of CC BY-SA 4.0:
+attribution is required, and derivatives must carry the same licence.
 
-See the file `LICENSE` for the full text.
+See the files `LICENSE` and `NOTICE` for the full text and the scope
+statements; the central licence map of the whole account is:
+https://github.com/finkeissen/finkeissen/blob/main/LICENSING.md
 
 
